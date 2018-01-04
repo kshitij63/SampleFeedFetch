@@ -15,7 +15,7 @@ import retrofit2.http.POST
 
 interface FeedApiInterface {
     @FormUrlEncoded
-    @POST("fetchfeed")
+    @POST("some feed")
     fun getAllFeedsFromNetwork(@Field("city") city: String,
                                @Field("batchSize") bacthSize: String,
                                @Field("publishedDate") publishedDate: String): io.reactivex.Observable<FeedModal>

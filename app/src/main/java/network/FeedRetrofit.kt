@@ -10,15 +10,18 @@ import retrofit2.converter.gson.GsonConverterFactory
  * Created by user on 12/29/2017.
  */
 
-object FeedRetrofit {
+class FeedRetrofit {
 
-    private var retrofit: Retrofit? = null
+        lateinit  var retrofit:Retrofit
 
-    fun getRetrofit(): Retrofit? {
+
+
+    fun getRetrofitInit(): Retrofit {
         if (retrofit == null) {
-            retrofit = Retrofit.Builder().baseUrl("https://soapi.in:3001/feed/")
+            retrofit = Retrofit.Builder().baseUrl("some url")
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-                    .addConverterFactory(GsonConverterFactory.create()).build()
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build()
         }
         return retrofit
     }

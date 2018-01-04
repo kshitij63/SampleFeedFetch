@@ -1,14 +1,12 @@
 package network
 
 import org.json.JSONObject
+import javax.inject.Inject
 
 /**
  * Created by user on 12/29/2017.
  */
 
-class FeedModal constructor(var process_status:String,var data:Detail) {
-    /*var process_status: String? = null
-        internal set
-    var data: Detail? = null
-        internal set
-*/}
+data class FeedModal(var process_status:String,  var data:Detail)
+
+
