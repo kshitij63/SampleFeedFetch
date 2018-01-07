@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "898596643083",
+    "firebase_url": "https://feedfetch-fae36.firebaseio.com",
+    "project_id": "feedfetch-fae36",
+    "storage_bucket": "feedfetch-fae36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898596643083:android:92af1e0d11f7fb36",
+        "android_client_info": {
+          "package_name": "com.omnify.hire.samplefeedfetch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898596643083-5iodhhu7l6a95vudrdjq1d3i0g3mp65f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.omnify.hire.samplefeedfetch",
+            "certificate_hash": "a4a281df718307d789ef83e17fe8e31ea422175b"
+          }
+        },
+        {
+          "client_id": "898596643083-1tsgfd9f7am9q1ftqfum4d6utu9mnicp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE6d3IXCoKnfVG-pvg0RG0JYTKS6eo1VA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898596643083-1tsgfd9f7am9q1ftqfum4d6utu9mnicp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

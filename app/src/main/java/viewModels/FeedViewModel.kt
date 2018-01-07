@@ -3,8 +3,6 @@ package viewModels
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.ViewModel
-import com.omnify.hire.samplefeedfetch.MainActivity
 import com.omnify.hire.samplefeedfetch.MyApplication
 
 import data.FeedEntity
@@ -15,13 +13,16 @@ import javax.inject.Inject
  * Created by user on 12/29/2017.
  */
 
- class FeedViewModel : ViewModel() {
+class FeedViewModel(application: Application) : AndroidViewModel(application) {
+    init {
+        MyApplication.component.inject(this)
+    }
 
     @Inject
-  lateinit var feedFetchRepo: FeedFetchRepository
+    lateinit var feedFetchRepository: FeedFetchRepository
 
 
-    fun getLiveData():LiveData<List<FeedEntity>>?{
-    return feedFetchRepo.getLiveDataForFeedList()
-}
+    fun getLiveData(): LiveData<List<FeedEntity>>? {
+        return feedFetchRepository.getLiveDataForFeedList()
     }
+}

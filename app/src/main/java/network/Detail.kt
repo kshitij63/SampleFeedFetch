@@ -1,6 +1,5 @@
 package network
 
-import java.util.ArrayList
 
 import data.FeedEntity
 

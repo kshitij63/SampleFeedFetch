@@ -2,7 +2,7 @@ package data
 
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
-import io.reactivex.annotations.NonNull
+
 
 /**
  * Created by user on 12/29/2017.

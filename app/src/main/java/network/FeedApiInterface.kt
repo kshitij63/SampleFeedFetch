@@ -1,10 +1,5 @@
 package network
 
-import android.database.Observable
-
-import data.FeedEntity
-import io.reactivex.Observer
-import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
@@ -15,7 +10,7 @@ import retrofit2.http.POST
 
 interface FeedApiInterface {
     @FormUrlEncoded
-    @POST("some feed")
+    @POST("fetchfeed")
     fun getAllFeedsFromNetwork(@Field("city") city: String,
                                @Field("batchSize") bacthSize: String,
                                @Field("publishedDate") publishedDate: String): io.reactivex.Observable<FeedModal>

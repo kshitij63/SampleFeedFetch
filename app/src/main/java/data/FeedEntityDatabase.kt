@@ -13,17 +13,7 @@ import com.omnify.hire.samplefeedfetch.MyApplication
 @Database(entities = arrayOf(FeedEntity::class), version = 1)
 abstract class FeedEntityDatabase : RoomDatabase() {
 
-   abstract fun getDao():FeedDao
-    companion object {
-        lateinit  var instance: FeedEntityDatabase
+    abstract fun getDao(): FeedDao
 
-        fun getInstance(context: MyApplication): FeedEntityDatabase {
-            if (instance == null) {
-                instance = Room.databaseBuilder(context, FeedEntityDatabase::class.java,"feed_db").build()
-                Log.e("tag","places")
-            }
 
-            return instance
-        }
-    }
 }
